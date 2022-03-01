@@ -20,28 +20,21 @@ function getName(){
             // Retrieve
             document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
   
-
-
-
-
-
-
-
-
     setInterval(
     function getName(){
     
      document.getElementById("sec-modal").style.display = "none";
-   
+
+     document.getElementById('userNm').innerHTML = localStorage.getItem("Username");
+     document.getElementById('userNm1').innerHTML = localStorage.getItem("Username");
+     document.getElementById('userNm2').innerHTML = localStorage.getItem("Username");
      },
     4000
   );
     }
   
   }
-  document.getElementById('userNm').innerHTML = localStorage.getItem("Username");
-  document.getElementById('userNm1').innerHTML = localStorage.getItem("Username");
-  document.getElementById('userNm2').innerHTML = localStorage.getItem("Username");
+ 
 
 
 
