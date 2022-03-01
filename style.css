@@ -1,0 +1,215 @@
+*{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Estonia', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+  }
+.hide {
+display: none;
+}
+.modal1{
+    background-color: cadetblue;
+    width: 60.0%;
+    height: 351px;
+    margin-left: 20.0%;
+    margin-right: 20.3%;
+    text-align: center;
+    position: relative;
+    top: 35%;
+  }
+  .modal-right-{
+    border-left: #fff solid 1px;
+    background-color: #1B2A49;
+    height: 351px;
+  }
+   input:focus {
+    color: #FFF;
+  
+}
+  .modal-right-btn {
+margin-top: 20px;
+background-color: cadetblue;
+color: #fff;
+border: none;
+width: 90px;
+  }
+  input[type=text]{
+    border: none;
+    width: 75%;
+    border-bottom: #fff solid 3px !important;
+    background: #1b2a49;
+    border: none;
+    height: 40px;
+
+  }
+  ::placeholder{
+    color: #fff;
+  }
+  .modal-right- p{
+    padding-top: 15%;
+    color: #fff;
+  }
+  .modal-left- p{
+    padding-top: 15%;
+    color: #fff;
+  }
+  .modal-left- i{
+   font-size: 100px;
+    color: #fff;
+  }
+  .modal-err{
+    color: red;
+  }
+  .sec-modal{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    z-index: 30;
+    
+    
+  }
+.scorceBoard{
+    font-size: 70px;
+    top: 50%;
+  }
+.row img{
+width: 250px;
+}
+
+.gameplay-play-btn{
+width: 200px;
+background-color: var(--green);
+color: #fff;
+border: none;
+height: 30px;
+
+}
+
+/* Animation */
+:root {
+--border-color: #D7DBE3;
+font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+--green: #0CD977;
+--red: #FF1C1C;
+--pink: #FF93DE;
+--purple: #5767ED;
+--yellow: #FFC61C;
+--rotation: 0deg;
+}
+
+
+.wrapper {
+justify-content: center;
+align-items: center;  
+}
+
+
+.emoji {
+display: block;
+text-align: center;
+font-size: 5rem;
+transform: scale(0.5);
+animation: scaleCup 2s infinite alternate;
+}
+
+
+@keyframes scaleCup {
+0% {
+transform: scale(0.6);
+} 
+
+100% {
+transform: scale(1);
+}
+}
+
+
+
+
+.modal-btn1 {
+
+text-align: center;
+color: #fff;
+font-weight: 600;
+background-color: var(--green);
+width: 160px;
+padding: 10px;
+border: none;
+
+}
+
+@keyframes confettiRain {
+0% {
+opacity: 1;
+margin-top: -100vh;
+margin-left: -200px;
+} 
+
+100% {
+opacity: 1;
+margin-top: 100vh;
+margin-left: 200px;
+}
+}
+
+.confetti {
+opacity: 0;
+position: absolute;
+width: 1rem;
+height: 1.5rem;
+transition: 500ms ease;
+animation: confettiRain 5s infinite;
+}
+
+#confetti-wrapper {
+overflow: hidden !important;
+}
+.wrapper p{
+font-size: 20px;
+align-items: center;
+text-align: center;
+font-weight: 600;
+
+}
+.modawinningAnimationl{
+text-align: center;
+width: 400px;
+margin: 0 auto;
+border: 1px solid var(--border-color);
+box-shadow: 0px 0px 5px rgba(0,0,0,0.16);
+background-color: #fff;
+border-radius: 0.25rem;
+padding: 2rem;
+z-index: 1;
+position: absolute;
+margin: -10px -96px;
+display: none;
+}
+.face {
+animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+perspective: 1000px;
+}
+
+@keyframes shake {
+10%, 90% {
+transform: translate3d(-1px, 0, 0);
+}
+
+20%, 80% {
+transform: translate3d(2px, 0, 0);
+}
+
+30%, 50%, 70% {
+transform: translate3d(-4px, 0, 0);
+}
+
+40%, 60% {
+transform: translate3d(4px, 0, 0);
+}
+}
