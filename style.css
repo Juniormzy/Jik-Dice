@@ -79,6 +79,12 @@ width: 90px;
 .row img{
 width: 250px;
 }
+.gameplay{
+  position: absolute;
+  top:20%;
+  width: 100%;
+  
+}
 
 .gameplay-play-btn{
 width: 200px;
