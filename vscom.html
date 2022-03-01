@@ -27,16 +27,17 @@
               <div class="col-md-2 justify-content-center">
                 <div class="wrapper">
                   <div class="modawinningAnimationl" id="modawinningAnimationl">
-                <!--     <span class="emoji">👏</span> -->
+               
                     <span class="emoji round">🏆</span>
                     <p>Congratulation<br> <span style="text-align: center; "  id="userNm1"></span> </p>
                     
-                    <button type="button"  class="modal-btn1">Restart</button>
+                    <button type="button"  class="modal-btn1" onclick="restart()">Restart</button>
                   </div>
                   <div class="modawinningAnimationl" id="modawinningAnimationlLost">
-                    <!--     <span class="emoji">👏</span> -->
-                        <span class="emoji round">💩</span>
-                        <p>You lost<br> <span style="text-align: center;" id="userNm2"></span> </p>
+                    
+                        <span class="emoji round"><span id="lost-emoji">💩</span><span id="draw-emoji">🤔</span> </span>
+                        
+                        <p><span id="draw">You lost</span><br> <span style="text-align: center;" id="userNm2"></span> </p>
                         
                         <button type="button"  class="modal-btn1">Restart<a href="index.html"></a></button>
                       </div>
@@ -82,6 +83,7 @@
               </div>
               
               <span class="modal-err" id="demo"></span>
+              <span class="modal-err1" id="demo1"></span>
             </div>
           </div>
 
@@ -98,6 +100,11 @@
           <img id="player1">
           <img  id="com">
         </div>
+        <div id="ban">
+          <span id="ban-text" style="font-size: 200px;">YOU ARE BANNED</span>
+
+        </div>
+       
     </div>
 
 

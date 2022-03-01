@@ -1,19 +1,33 @@
 function getName(){
-
+//Imput validation
     var userName = document.getElementById('userName').value;
+
+    var barnWord1 = 'fuck';
+    var barnWord2 = 'sex';
+    var barnWord3 = 'nigga';
+
   
+
+    if(userName == barnWord1||userName == barnWord2||userName ==barnWord3 ){
+     
+
+      localStorage.setItem("banned", 'block');
+      // Retrieve
+      document.getElementById('ban').style.display =localStorage.getItem("banned");
+
+    }
   
     if(userName == ''){
       document.getElementById("demo").innerHTML = "Name empty";
   
     }
+ 
     else{
   
-      document.getElementById("demo").innerHTML = "Name saved ";
+      document.getElementById("demo").innerHTML = "Name saved";
+      document.getElementById("demo1").innerHTML = "Name saved";
       document.getElementsByClassName("user1").innerHTML = userName;
-      // document.getElementById("userNm").innerHTML = userName;
-      // document.getElementById('userNm1').innerHTML = userName;
-      // document.getElementById('userNm2').innerHTML = userName;
+
             // Set Item
 
             localStorage.setItem("Username", userName);
@@ -107,15 +121,18 @@ function getName(){
       
       if (getRandomNumCom> getRandomNumUser) {
     
+        //if computer wins
         document.getElementById('modawinningAnimationl').style.display = "none";
         document.getElementById('modawinningAnimationlLost').style.display = "block";
         IMG_ANI = document.getElementById('img1');
         IMG_ANI.classList.add("face");
         document.getElementById("confetti-wrapper").style.display = 'none';
+        
 
 
 
       }
+      //IF User wins
       else if(getRandomNumCom <getRandomNumUser){
         document.getElementById('modawinningAnimationl').style.display = "block";
         document.getElementById('modawinningAnimationlLost').style.display = "none";
@@ -123,13 +140,21 @@ function getName(){
         IMG_ANI = document.getElementById('img1');
         IMG_ANI.classList.add("face");
         document.getElementById("confetti-wrapper").style.display = 'block';
+        document.getElementById('draw-emoji').style.display = 'none';
+        document.getElementById('lost-emoji').style.display = 'block';
+        document.getElementById('draw').innerHTML = 'You lost';
+
     } 
       else{
-        document.getElementById('modawinningAnimationl').style.display = "block";
-        document.getElementById('modawinningAnimationlLost').style.display = "none";
+        //IF DICE EQUAL
+        document.getElementById('modawinningAnimationl').style.display = "none";
+        document.getElementById('modawinningAnimationlLost').style.display = "block";
         IMG_ANI = document.getElementById('img1');
         IMG_ANI.classList.add("face");
+        document.getElementById('draw').innerHTML = 'DRAW TRY AGAIN';
         document.getElementById("confetti-wrapper").style.display = 'none';
+        document.getElementById('draw-emoji').style.display = 'block';
+        document.getElementById('lost-emoji').style.display = 'none';
             
   
       }
@@ -137,5 +162,12 @@ function getName(){
   
   
     }
+    
+    
+    function restart(){
+      location.reload();
+
+    }
+ 
     
   

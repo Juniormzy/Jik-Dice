@@ -3,6 +3,10 @@
 font-family: 'Estonia', cursive;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
+
+  }
+  html{
+    background: #F1DCD3;
   }
 .hide {
 display: none;
@@ -16,6 +20,7 @@ display: none;
     text-align: center;
     position: relative;
     top: 35%;
+    border-radius: 20px;
   }
   .modal-right-{
     border-left: #fff solid 1px;
@@ -83,15 +88,24 @@ width: 250px;
   position: absolute;
   top:20%;
   width: 100%;
+  background-color: #EDE2DC;
   
+}
+#ban{
+  z-index: 1000;
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: none;
 }
 
 .gameplay-play-btn{
 width: 200px;
-background-color: var(--green);
+background-color: #AB3B61;
 color: #fff;
 border: none;
-height: 30px;
+height: 50px;
 
 }
 
